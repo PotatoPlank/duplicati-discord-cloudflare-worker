@@ -1,0 +1,26 @@
+{
+  "name": "duplicati-discord-cloudflare-worker",
+  "packageManager": "pnpm@10.6.3+sha512.bb45e34d50a9a76e858a95837301bfb6bd6d35aea2c5d52094fa497a467c43f5c440103ce2511e9e0a2f89c3d6071baac3358fc68ac6fb75e2ceb3d2736065e6",
+  "author": "LekoArts",
+  "license": "MIT",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
+  },
+  "dependencies": {
+    "hono": "^4.12.4"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^7.6.1",
+    "@cloudflare/vitest-pool-workers": "^0.12.18",
+    "@cloudflare/workers-types": "^4.20260301.1",
+    "eslint": "^9.23.0",
+    "eslint-plugin-format": "^2.0.1",
+    "vitest": "^3.2.4",
+    "wrangler": "^4.69.0"
+  }
+}
